@@ -3,12 +3,3 @@ os: linux
 files:
   - source: ./
     destination: /home/wilofsystem/www
-hooks:
-  BeforeInstall:
-    - location: scripts/before.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: scripts/after.sh
-      timeout: 300
-      runas: root
